@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC829EC228282C5E00188C19 /* MultisetIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E5F28282C5D00188C19 /* MultisetIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC328282C5E00188C19 /* ListaOrdIntImp2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E6228282C5D00188C19 /* ListaOrdIntImp2.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC428282C5E00188C19 /* DiccionarioIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E6328282C5D00188C19 /* DiccionarioIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC528282C5E00188C19 /* PruebasCorreccion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E6428282C5D00188C19 /* PruebasCorreccion.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC628282C5E00188C19 /* PruebasAuxDefensa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E6628282C5D00188C19 /* PruebasAuxDefensa.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC728282C5E00188C19 /* PruebasPilaInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E6A28282C5D00188C19 /* PruebasPilaInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC828282C5E00188C19 /* PruebasListaPosInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E7028282C5D00188C19 /* PruebasListaPosInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EC928282C5E00188C19 /* ConductorPruebaObl2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E7428282C5D00188C19 /* ConductorPruebaObl2.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ECA28282C5E00188C19 /* ColaArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E7728282C5D00188C19 /* ColaArray.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ECB28282C5E00188C19 /* PruebasMultisetInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E7828282C5D00188C19 /* PruebasMultisetInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ECC28282C5E00188C19 /* ManejadorSalidaPrueba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E7A28282C5D00188C19 /* ManejadorSalidaPrueba.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ECD28282C5E00188C19 /* Ejercicios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E7B28282C5D00188C19 /* Ejercicios.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ECE28282C5E00188C19 /* ColaPrioridadIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8128282C5D00188C19 /* ColaPrioridadIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ECF28282C5E00188C19 /* PilaIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8228282C5D00188C19 /* PilaIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED028282C5E00188C19 /* TablaIntStringImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8328282C5D00188C19 /* TablaIntStringImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED128282C5E00188C19 /* FuncAux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8528282C5D00188C19 /* FuncAux.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED228282C5E00188C19 /* PruebasEjemploDeUsoEntrega.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8728282C5D00188C19 /* PruebasEjemploDeUsoEntrega.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED328282C5E00188C19 /* PruebasAuxEntrega.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8828282C5D00188C19 /* PruebasAuxEntrega.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED428282C5E00188C19 /* ManejadorImpresionPrueba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8928282C5D00188C19 /* ManejadorImpresionPrueba.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED528282C5E00188C19 /* PruebasDefensa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8C28282C5D00188C19 /* PruebasDefensa.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED628282C5E00188C19 /* PruebasSetInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E8D28282C5D00188C19 /* PruebasSetInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED728282C5E00188C19 /* PruebasTablaIntString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E9028282C5D00188C19 /* PruebasTablaIntString.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED828282C5E00188C19 /* FuncAux_s.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E9128282C5D00188C19 /* FuncAux_s.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829ED928282C5E00188C19 /* EstadisticaPrueba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E9928282C5D00188C19 /* EstadisticaPrueba.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EDA28282C5E00188C19 /* PruebasTablaIntInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829E9A28282C5D00188C19 /* PruebasTablaIntInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EDB28282C5E00188C19 /* ListaOrdIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EA028282C5D00188C19 /* ListaOrdIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EDC28282C5E00188C19 /* SetIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EA228282C5D00188C19 /* SetIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EDD28282C5E00188C19 /* ConductorPrueba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EA328282C5D00188C19 /* ConductorPrueba.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EDE28282C5E00188C19 /* Defensa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EA628282C5D00188C19 /* Defensa.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EDF28282C5E00188C19 /* ManejadorArchivos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EA728282C5D00188C19 /* ManejadorArchivos.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE028282C5E00188C19 /* Prueba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EAD28282C5D00188C19 /* Prueba.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE128282C5E00188C19 /* PruebasColaInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EAE28282C5D00188C19 /* PruebasColaInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE228282C5E00188C19 /* ColaIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EB028282C5D00188C19 /* ColaIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE328282C5E00188C19 /* PruebasListaOrdInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EB528282C5D00188C19 /* PruebasListaOrdInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE428282C5E00188C19 /* PruebasColaPrioridadInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EB628282C5D00188C19 /* PruebasColaPrioridadInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE528282C5E00188C19 /* ListaPosIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EB828282C5D00188C19 /* ListaPosIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE628282C5E00188C19 /* PruebasDiccionarioInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EB928282C5D00188C19 /* PruebasDiccionarioInt.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE728282C5E00188C19 /* PruebasPropias.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EBA28282C5D00188C19 /* PruebasPropias.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE828282C5E00188C19 /* FuncAuxTAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EBB28282C5E00188C19 /* FuncAuxTAD.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EE928282C5E00188C19 /* TablaIntIntImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EBC28282C5E00188C19 /* TablaIntIntImp.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FC829EEA28282C5E00188C19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC829EBE28282C5E00188C19 /* main.cpp */; settings = {COMPILER_FLAGS = "-Werror=vla"; }; };
+		FCBEFEB5282F3F1D00D65C36 /* PruebasEjemploDeUsoEntrega.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC829E7628282C5D00188C19 /* PruebasEjemploDeUsoEntrega.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC829DAF28275D5100188C19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				FCBEFEB5282F3F1D00D65C36 /* PruebasEjemploDeUsoEntrega.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC7BDC572A09BE8E0091A351 /* Implementaciones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Implementaciones.h; sourceTree = "<group>"; };
+		FC829DB128275D5100188C19 /* Ejercicios2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ejercicios2; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC829E5F28282C5D00188C19 /* MultisetIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultisetIntImp.cpp; sourceTree = "<group>"; };
+		FC829E6028282C5D00188C19 /* PilaIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PilaIntImp.h; sourceTree = "<group>"; };
+		FC829E6128282C5D00188C19 /* ManejadorSalidaPrueba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManejadorSalidaPrueba.h; sourceTree = "<group>"; };
+		FC829E6228282C5D00188C19 /* ListaOrdIntImp2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListaOrdIntImp2.cpp; sourceTree = "<group>"; };
+		FC829E6328282C5D00188C19 /* DiccionarioIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiccionarioIntImp.cpp; sourceTree = "<group>"; };
+		FC829E6428282C5D00188C19 /* PruebasCorreccion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasCorreccion.cpp; sourceTree = "<group>"; };
+		FC829E6528282C5D00188C19 /* PruebasSetInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasSetInt.h; sourceTree = "<group>"; };
+		FC829E6628282C5D00188C19 /* PruebasAuxDefensa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasAuxDefensa.cpp; sourceTree = "<group>"; };
+		FC829E6728282C5D00188C19 /* ListaOrdIntImp2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaOrdIntImp2.h; sourceTree = "<group>"; };
+		FC829E6828282C5D00188C19 /* Prueba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prueba.h; sourceTree = "<group>"; };
+		FC829E6928282C5D00188C19 /* PruebasEjemploDeUsoEntrega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasEjemploDeUsoEntrega.h; sourceTree = "<group>"; };
+		FC829E6A28282C5D00188C19 /* PruebasPilaInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasPilaInt.cpp; sourceTree = "<group>"; };
+		FC829E6B28282C5D00188C19 /* ListaPosInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaPosInt.h; sourceTree = "<group>"; };
+		FC829E6C28282C5D00188C19 /* PruebasDefensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasDefensa.h; sourceTree = "<group>"; };
+		FC829E6D28282C5D00188C19 /* ConductorPrueba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorPrueba.h; sourceTree = "<group>"; };
+		FC829E6E28282C5D00188C19 /* PruebasCorreccion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasCorreccion.h; sourceTree = "<group>"; };
+		FC829E6F28282C5D00188C19 /* PruebasListaOrdInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasListaOrdInt.h; sourceTree = "<group>"; };
+		FC829E7028282C5D00188C19 /* PruebasListaPosInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasListaPosInt.cpp; sourceTree = "<group>"; };
+		FC829E7128282C5D00188C19 /* TablaIntInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaIntInt.h; sourceTree = "<group>"; };
+		FC829E7228282C5D00188C19 /* FuncAux_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncAux_s.h; sourceTree = "<group>"; };
+		FC829E7328282C5D00188C19 /* PruebasPilaInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasPilaInt.h; sourceTree = "<group>"; };
+		FC829E7428282C5D00188C19 /* ConductorPruebaObl2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConductorPruebaObl2.cpp; sourceTree = "<group>"; };
+		FC829E7528282C5D00188C19 /* PruebasDiccionarioInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasDiccionarioInt.h; sourceTree = "<group>"; };
+		FC829E7628282C5D00188C19 /* PruebasEjemploDeUsoEntrega.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PruebasEjemploDeUsoEntrega.txt; sourceTree = "<group>"; };
+		FC829E7728282C5D00188C19 /* ColaArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColaArray.cpp; sourceTree = "<group>"; };
+		FC829E7828282C5D00188C19 /* PruebasMultisetInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasMultisetInt.cpp; sourceTree = "<group>"; };
+		FC829E7928282C5D00188C19 /* DiccionarioInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioInt.h; sourceTree = "<group>"; };
+		FC829E7A28282C5D00188C19 /* ManejadorSalidaPrueba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManejadorSalidaPrueba.cpp; sourceTree = "<group>"; };
+		FC829E7B28282C5D00188C19 /* Ejercicios.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ejercicios.cpp; sourceTree = "<group>"; };
+		FC829E7C28282C5D00188C19 /* Definiciones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definiciones.h; sourceTree = "<group>"; };
+		FC829E7D28282C5D00188C19 /* MultisetIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultisetIntImp.h; sourceTree = "<group>"; };
+		FC829E7E28282C5D00188C19 /* ColaIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaIntImp.h; sourceTree = "<group>"; };
+		FC829E7F28282C5D00188C19 /* SetIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetIntImp.h; sourceTree = "<group>"; };
+		FC829E8028282C5D00188C19 /* ColaPrioridadIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaPrioridadIntImp.h; sourceTree = "<group>"; };
+		FC829E8128282C5D00188C19 /* ColaPrioridadIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColaPrioridadIntImp.cpp; sourceTree = "<group>"; };
+		FC829E8228282C5D00188C19 /* PilaIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PilaIntImp.cpp; sourceTree = "<group>"; };
+		FC829E8328282C5D00188C19 /* TablaIntStringImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TablaIntStringImp.cpp; sourceTree = "<group>"; };
+		FC829E8428282C5D00188C19 /* ColaPrioridadInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaPrioridadInt.h; sourceTree = "<group>"; };
+		FC829E8528282C5D00188C19 /* FuncAux.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FuncAux.cpp; sourceTree = "<group>"; };
+		FC829E8628282C5D00188C19 /* Constantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constantes.h; sourceTree = "<group>"; };
+		FC829E8728282C5D00188C19 /* PruebasEjemploDeUsoEntrega.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasEjemploDeUsoEntrega.cpp; sourceTree = "<group>"; };
+		FC829E8828282C5D00188C19 /* PruebasAuxEntrega.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasAuxEntrega.cpp; sourceTree = "<group>"; };
+		FC829E8928282C5D00188C19 /* ManejadorImpresionPrueba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManejadorImpresionPrueba.cpp; sourceTree = "<group>"; };
+		FC829E8A28282C5D00188C19 /* TablaIntIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaIntIntImp.h; sourceTree = "<group>"; };
+		FC829E8B28282C5D00188C19 /* PruebasColaPrioridadInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasColaPrioridadInt.h; sourceTree = "<group>"; };
+		FC829E8C28282C5D00188C19 /* PruebasDefensa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasDefensa.cpp; sourceTree = "<group>"; };
+		FC829E8D28282C5D00188C19 /* PruebasSetInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasSetInt.cpp; sourceTree = "<group>"; };
+		FC829E8E28282C5D00188C19 /* Ejercicios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ejercicios.txt; sourceTree = "<group>"; };
+		FC829E8F28282C5D00188C19 /* Defensa.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Defensa.txt; sourceTree = "<group>"; };
+		FC829E9028282C5D00188C19 /* PruebasTablaIntString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasTablaIntString.cpp; sourceTree = "<group>"; };
+		FC829E9128282C5D00188C19 /* FuncAux_s.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FuncAux_s.cpp; sourceTree = "<group>"; };
+		FC829E9228282C5D00188C19 /* PruebasListaPosInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasListaPosInt.h; sourceTree = "<group>"; };
+		FC829E9328282C5D00188C19 /* PruebasTablaIntString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasTablaIntString.h; sourceTree = "<group>"; };
+		FC829E9428282C5D00188C19 /* TipoPruebas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipoPruebas.h; sourceTree = "<group>"; };
+		FC829E9528282C5D00188C19 /* ListaOrdInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaOrdInt.h; sourceTree = "<group>"; };
+		FC829E9628282C5D00188C19 /* SetInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetInt.h; sourceTree = "<group>"; };
+		FC829E9728282C5D00188C19 /* ConductorPruebaObl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorPruebaObl2.h; sourceTree = "<group>"; };
+		FC829E9828282C5D00188C19 /* TablaIntStringImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaIntStringImp.h; sourceTree = "<group>"; };
+		FC829E9928282C5D00188C19 /* EstadisticaPrueba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EstadisticaPrueba.cpp; sourceTree = "<group>"; };
+		FC829E9A28282C5D00188C19 /* PruebasTablaIntInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasTablaIntInt.cpp; sourceTree = "<group>"; };
+		FC829E9B28282C5D00188C19 /* PruebasPropias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasPropias.h; sourceTree = "<group>"; };
+		FC829E9C28282C5D00188C19 /* PruebasColaInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasColaInt.h; sourceTree = "<group>"; };
+		FC829E9D28282C5D00188C19 /* Defensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defensa.h; sourceTree = "<group>"; };
+		FC829E9E28282C5D00188C19 /* TipoRetorno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipoRetorno.h; sourceTree = "<group>"; };
+		FC829E9F28282C5D00188C19 /* ManejadorImpresionPrueba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManejadorImpresionPrueba.h; sourceTree = "<group>"; };
+		FC829EA028282C5D00188C19 /* ListaOrdIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListaOrdIntImp.cpp; sourceTree = "<group>"; };
+		FC829EA128282C5D00188C19 /* ManejadorArchivos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManejadorArchivos.h; sourceTree = "<group>"; };
+		FC829EA228282C5D00188C19 /* SetIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetIntImp.cpp; sourceTree = "<group>"; };
+		FC829EA328282C5D00188C19 /* ConductorPrueba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConductorPrueba.cpp; sourceTree = "<group>"; };
+		FC829EA428282C5D00188C19 /* FuncAuxTAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncAuxTAD.h; sourceTree = "<group>"; };
+		FC829EA528282C5D00188C19 /* Ejercicios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ejercicios.h; sourceTree = "<group>"; };
+		FC829EA628282C5D00188C19 /* Defensa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Defensa.cpp; sourceTree = "<group>"; };
+		FC829EA728282C5D00188C19 /* ManejadorArchivos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManejadorArchivos.cpp; sourceTree = "<group>"; };
+		FC829EA828282C5D00188C19 /* ListaPosIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaPosIntImp.h; sourceTree = "<group>"; };
+		FC829EA928282C5D00188C19 /* MultisetInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultisetInt.h; sourceTree = "<group>"; };
+		FC829EAA28282C5D00188C19 /* PruebasTablaIntInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasTablaIntInt.h; sourceTree = "<group>"; };
+		FC829EAB28282C5D00188C19 /* ColaArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaArray.h; sourceTree = "<group>"; };
+		FC829EAC28282C5D00188C19 /* EstadisticaPrueba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstadisticaPrueba.h; sourceTree = "<group>"; };
+		FC829EAD28282C5D00188C19 /* Prueba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prueba.cpp; sourceTree = "<group>"; };
+		FC829EAE28282C5D00188C19 /* PruebasColaInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasColaInt.cpp; sourceTree = "<group>"; };
+		FC829EAF28282C5D00188C19 /* TablaIntString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaIntString.h; sourceTree = "<group>"; };
+		FC829EB028282C5D00188C19 /* ColaIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColaIntImp.cpp; sourceTree = "<group>"; };
+		FC829EB128282C5D00188C19 /* PruebasAuxEntrega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasAuxEntrega.h; sourceTree = "<group>"; };
+		FC829EB228282C5D00188C19 /* PilaInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PilaInt.h; sourceTree = "<group>"; };
+		FC829EB328282C5D00188C19 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		FC829EB428282C5D00188C19 /* PruebasAuxDefensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasAuxDefensa.h; sourceTree = "<group>"; };
+		FC829EB528282C5D00188C19 /* PruebasListaOrdInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasListaOrdInt.cpp; sourceTree = "<group>"; };
+		FC829EB628282C5D00188C19 /* PruebasColaPrioridadInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasColaPrioridadInt.cpp; sourceTree = "<group>"; };
+		FC829EB728282C5D00188C19 /* FuncAux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncAux.h; sourceTree = "<group>"; };
+		FC829EB828282C5D00188C19 /* ListaPosIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListaPosIntImp.cpp; sourceTree = "<group>"; };
+		FC829EB928282C5D00188C19 /* PruebasDiccionarioInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasDiccionarioInt.cpp; sourceTree = "<group>"; };
+		FC829EBA28282C5D00188C19 /* PruebasPropias.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PruebasPropias.cpp; sourceTree = "<group>"; };
+		FC829EBB28282C5E00188C19 /* FuncAuxTAD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FuncAuxTAD.cpp; sourceTree = "<group>"; };
+		FC829EBC28282C5E00188C19 /* TablaIntIntImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TablaIntIntImp.cpp; sourceTree = "<group>"; };
+		FC829EBD28282C5E00188C19 /* ColaInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaInt.h; sourceTree = "<group>"; };
+		FC829EBE28282C5E00188C19 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FC829EBF28282C5E00188C19 /* PruebasMultisetInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebasMultisetInt.h; sourceTree = "<group>"; };
+		FC829EC028282C5E00188C19 /* DiccionarioIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioIntImp.h; sourceTree = "<group>"; };
+		FC829EC128282C5E00188C19 /* ListaOrdIntImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaOrdIntImp.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC829DAE28275D5100188C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC829DA828275D5100188C19 = {
+			isa = PBXGroup;
+			children = (
+				FC829DB328275D5100188C19 /* Ejercicios2 */,
+				FC829DB228275D5100188C19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC829DB228275D5100188C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC829DB128275D5100188C19 /* Ejercicios2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC829DB328275D5100188C19 /* Ejercicios2 */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EF028282CE900188C19 /* Colecciones */,
+				FC829EED28282C7700188C19 /* Ejercicios */,
+				FC829EEF28282CCC00188C19 /* Framework */,
+				FC829EEB28282C6700188C19 /* Pruebas */,
+			);
+			path = Ejercicios2;
+			sourceTree = "<group>";
+		};
+		FC829EEB28282C6700188C19 /* Pruebas */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EF128282CF500188C19 /* Aux */,
+				FC829EF228282CFB00188C19 /* Colecciones */,
+				FC829E7428282C5D00188C19 /* ConductorPruebaObl2.cpp */,
+				FC829E9728282C5D00188C19 /* ConductorPruebaObl2.h */,
+				FC829E6428282C5D00188C19 /* PruebasCorreccion.cpp */,
+				FC829E6E28282C5D00188C19 /* PruebasCorreccion.h */,
+				FC829E8C28282C5D00188C19 /* PruebasDefensa.cpp */,
+				FC829E6C28282C5D00188C19 /* PruebasDefensa.h */,
+				FC829E8728282C5D00188C19 /* PruebasEjemploDeUsoEntrega.cpp */,
+				FC829E6928282C5D00188C19 /* PruebasEjemploDeUsoEntrega.h */,
+				FC829E7628282C5D00188C19 /* PruebasEjemploDeUsoEntrega.txt */,
+				FC829EBA28282C5D00188C19 /* PruebasPropias.cpp */,
+				FC829E9B28282C5D00188C19 /* PruebasPropias.h */,
+				FC829E9428282C5D00188C19 /* TipoPruebas.h */,
+			);
+			name = Pruebas;
+			sourceTree = "<group>";
+		};
+		FC829EED28282C7700188C19 /* Ejercicios */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BDC572A09BE8E0091A351 /* Implementaciones.h */,
+				FC829EA628282C5D00188C19 /* Defensa.cpp */,
+				FC829E9D28282C5D00188C19 /* Defensa.h */,
+				FC829E8F28282C5D00188C19 /* Defensa.txt */,
+				FC829E7B28282C5D00188C19 /* Ejercicios.cpp */,
+				FC829EA528282C5D00188C19 /* Ejercicios.h */,
+				FC829E8E28282C5D00188C19 /* Ejercicios.txt */,
+			);
+			name = Ejercicios;
+			sourceTree = "<group>";
+		};
+		FC829EEF28282CCC00188C19 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EF528282D4B00188C19 /* ArchivosPrueba */,
+				FC829EF428282D4400188C19 /* Auxiliares */,
+				FC829EF328282D3C00188C19 /* Manejadores */,
+				FC829E8628282C5D00188C19 /* Constantes.h */,
+				FC829EBE28282C5E00188C19 /* main.cpp */,
+				FC829E9E28282C5D00188C19 /* TipoRetorno.h */,
+				FC829EB328282C5D00188C19 /* version.txt */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		FC829EF028282CE900188C19 /* Colecciones */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EFB28282E1C00188C19 /* Colas */,
+				FC829EFA28282E1600188C19 /* Conjuntos */,
+				FC829EF928282E1000188C19 /* Diccionarios */,
+				FC829EF828282E0900188C19 /* Listas */,
+				FC829EF728282E0300188C19 /* Pilas */,
+				FC829EF628282DFD00188C19 /* Tablas */,
+			);
+			name = Colecciones;
+			sourceTree = "<group>";
+		};
+		FC829EF128282CF500188C19 /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E6628282C5D00188C19 /* PruebasAuxDefensa.cpp */,
+				FC829EB428282C5D00188C19 /* PruebasAuxDefensa.h */,
+				FC829E8828282C5D00188C19 /* PruebasAuxEntrega.cpp */,
+				FC829EB128282C5D00188C19 /* PruebasAuxEntrega.h */,
+			);
+			name = Aux;
+			sourceTree = "<group>";
+		};
+		FC829EF228282CFB00188C19 /* Colecciones */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EAE28282C5D00188C19 /* PruebasColaInt.cpp */,
+				FC829E9C28282C5D00188C19 /* PruebasColaInt.h */,
+				FC829EB628282C5D00188C19 /* PruebasColaPrioridadInt.cpp */,
+				FC829E8B28282C5D00188C19 /* PruebasColaPrioridadInt.h */,
+				FC829EB928282C5D00188C19 /* PruebasDiccionarioInt.cpp */,
+				FC829E7528282C5D00188C19 /* PruebasDiccionarioInt.h */,
+				FC829EB528282C5D00188C19 /* PruebasListaOrdInt.cpp */,
+				FC829E6F28282C5D00188C19 /* PruebasListaOrdInt.h */,
+				FC829E7028282C5D00188C19 /* PruebasListaPosInt.cpp */,
+				FC829E9228282C5D00188C19 /* PruebasListaPosInt.h */,
+				FC829E7828282C5D00188C19 /* PruebasMultisetInt.cpp */,
+				FC829EBF28282C5E00188C19 /* PruebasMultisetInt.h */,
+				FC829E6A28282C5D00188C19 /* PruebasPilaInt.cpp */,
+				FC829E7328282C5D00188C19 /* PruebasPilaInt.h */,
+				FC829E8D28282C5D00188C19 /* PruebasSetInt.cpp */,
+				FC829E6528282C5D00188C19 /* PruebasSetInt.h */,
+				FC829E9A28282C5D00188C19 /* PruebasTablaIntInt.cpp */,
+				FC829EAA28282C5D00188C19 /* PruebasTablaIntInt.h */,
+				FC829E9028282C5D00188C19 /* PruebasTablaIntString.cpp */,
+				FC829E9328282C5D00188C19 /* PruebasTablaIntString.h */,
+			);
+			name = Colecciones;
+			sourceTree = "<group>";
+		};
+		FC829EF328282D3C00188C19 /* Manejadores */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EA728282C5D00188C19 /* ManejadorArchivos.cpp */,
+				FC829EA128282C5D00188C19 /* ManejadorArchivos.h */,
+				FC829E8928282C5D00188C19 /* ManejadorImpresionPrueba.cpp */,
+				FC829E9F28282C5D00188C19 /* ManejadorImpresionPrueba.h */,
+				FC829E7A28282C5D00188C19 /* ManejadorSalidaPrueba.cpp */,
+				FC829E6128282C5D00188C19 /* ManejadorSalidaPrueba.h */,
+			);
+			name = Manejadores;
+			sourceTree = "<group>";
+		};
+		FC829EF428282D4400188C19 /* Auxiliares */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E7728282C5D00188C19 /* ColaArray.cpp */,
+				FC829EAB28282C5D00188C19 /* ColaArray.h */,
+				FC829E7C28282C5D00188C19 /* Definiciones.h */,
+				FC829E9128282C5D00188C19 /* FuncAux_s.cpp */,
+				FC829E7228282C5D00188C19 /* FuncAux_s.h */,
+				FC829E8528282C5D00188C19 /* FuncAux.cpp */,
+				FC829EB728282C5D00188C19 /* FuncAux.h */,
+				FC829EBB28282C5E00188C19 /* FuncAuxTAD.cpp */,
+				FC829EA428282C5D00188C19 /* FuncAuxTAD.h */,
+			);
+			name = Auxiliares;
+			sourceTree = "<group>";
+		};
+		FC829EF528282D4B00188C19 /* ArchivosPrueba */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EA328282C5D00188C19 /* ConductorPrueba.cpp */,
+				FC829E6D28282C5D00188C19 /* ConductorPrueba.h */,
+				FC829E9928282C5D00188C19 /* EstadisticaPrueba.cpp */,
+				FC829EAC28282C5D00188C19 /* EstadisticaPrueba.h */,
+				FC829EAD28282C5D00188C19 /* Prueba.cpp */,
+				FC829E6828282C5D00188C19 /* Prueba.h */,
+			);
+			name = ArchivosPrueba;
+			sourceTree = "<group>";
+		};
+		FC829EF628282DFD00188C19 /* Tablas */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EFD28282ED600188C19 /* TablaIntInt */,
+				FC829EFC28282ECF00188C19 /* TablaIntString */,
+			);
+			name = Tablas;
+			sourceTree = "<group>";
+		};
+		FC829EF728282E0300188C19 /* Pilas */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EFE28282EF200188C19 /* PilaInt */,
+			);
+			name = Pilas;
+			sourceTree = "<group>";
+		};
+		FC829EF828282E0900188C19 /* Listas */ = {
+			isa = PBXGroup;
+			children = (
+				FC829F0028282F0D00188C19 /* ListaOrdInt */,
+				FC829EFF28282F0500188C19 /* ListaPosInt */,
+			);
+			name = Listas;
+			sourceTree = "<group>";
+		};
+		FC829EF928282E1000188C19 /* Diccionarios */ = {
+			isa = PBXGroup;
+			children = (
+				FC829F0128282F2000188C19 /* DiccionarioInt */,
+			);
+			name = Diccionarios;
+			sourceTree = "<group>";
+		};
+		FC829EFA28282E1600188C19 /* Conjuntos */ = {
+			isa = PBXGroup;
+			children = (
+				FC829F0328282F3300188C19 /* SetInt */,
+				FC829F0228282F2B00188C19 /* MultisetInt */,
+			);
+			name = Conjuntos;
+			sourceTree = "<group>";
+		};
+		FC829EFB28282E1C00188C19 /* Colas */ = {
+			isa = PBXGroup;
+			children = (
+				FC829F0528282F4F00188C19 /* ColaInt */,
+				FC829F0428282F4600188C19 /* ColaPrioridadInt */,
+			);
+			name = Colas;
+			sourceTree = "<group>";
+		};
+		FC829EFC28282ECF00188C19 /* TablaIntString */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EAF28282C5D00188C19 /* TablaIntString.h */,
+				FC829E8328282C5D00188C19 /* TablaIntStringImp.cpp */,
+				FC829E9828282C5D00188C19 /* TablaIntStringImp.h */,
+			);
+			name = TablaIntString;
+			sourceTree = "<group>";
+		};
+		FC829EFD28282ED600188C19 /* TablaIntInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E7128282C5D00188C19 /* TablaIntInt.h */,
+				FC829EBC28282C5E00188C19 /* TablaIntIntImp.cpp */,
+				FC829E8A28282C5D00188C19 /* TablaIntIntImp.h */,
+			);
+			name = TablaIntInt;
+			sourceTree = "<group>";
+		};
+		FC829EFE28282EF200188C19 /* PilaInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EB228282C5D00188C19 /* PilaInt.h */,
+				FC829E8228282C5D00188C19 /* PilaIntImp.cpp */,
+				FC829E6028282C5D00188C19 /* PilaIntImp.h */,
+			);
+			name = PilaInt;
+			sourceTree = "<group>";
+		};
+		FC829EFF28282F0500188C19 /* ListaPosInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E6B28282C5D00188C19 /* ListaPosInt.h */,
+				FC829EB828282C5D00188C19 /* ListaPosIntImp.cpp */,
+				FC829EA828282C5D00188C19 /* ListaPosIntImp.h */,
+			);
+			name = ListaPosInt;
+			sourceTree = "<group>";
+		};
+		FC829F0028282F0D00188C19 /* ListaOrdInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E9528282C5D00188C19 /* ListaOrdInt.h */,
+				FC829EA028282C5D00188C19 /* ListaOrdIntImp.cpp */,
+				FC829EC128282C5E00188C19 /* ListaOrdIntImp.h */,
+				FC829E6228282C5D00188C19 /* ListaOrdIntImp2.cpp */,
+				FC829E6728282C5D00188C19 /* ListaOrdIntImp2.h */,
+			);
+			name = ListaOrdInt;
+			sourceTree = "<group>";
+		};
+		FC829F0128282F2000188C19 /* DiccionarioInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E7928282C5D00188C19 /* DiccionarioInt.h */,
+				FC829E6328282C5D00188C19 /* DiccionarioIntImp.cpp */,
+				FC829EC028282C5E00188C19 /* DiccionarioIntImp.h */,
+			);
+			name = DiccionarioInt;
+			sourceTree = "<group>";
+		};
+		FC829F0228282F2B00188C19 /* MultisetInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EA928282C5D00188C19 /* MultisetInt.h */,
+				FC829E5F28282C5D00188C19 /* MultisetIntImp.cpp */,
+				FC829E7D28282C5D00188C19 /* MultisetIntImp.h */,
+			);
+			name = MultisetInt;
+			sourceTree = "<group>";
+		};
+		FC829F0328282F3300188C19 /* SetInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E9628282C5D00188C19 /* SetInt.h */,
+				FC829EA228282C5D00188C19 /* SetIntImp.cpp */,
+				FC829E7F28282C5D00188C19 /* SetIntImp.h */,
+			);
+			name = SetInt;
+			sourceTree = "<group>";
+		};
+		FC829F0428282F4600188C19 /* ColaPrioridadInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829E8428282C5D00188C19 /* ColaPrioridadInt.h */,
+				FC829E8128282C5D00188C19 /* ColaPrioridadIntImp.cpp */,
+				FC829E8028282C5D00188C19 /* ColaPrioridadIntImp.h */,
+			);
+			name = ColaPrioridadInt;
+			sourceTree = "<group>";
+		};
+		FC829F0528282F4F00188C19 /* ColaInt */ = {
+			isa = PBXGroup;
+			children = (
+				FC829EBD28282C5E00188C19 /* ColaInt.h */,
+				FC829EB028282C5D00188C19 /* ColaIntImp.cpp */,
+				FC829E7E28282C5D00188C19 /* ColaIntImp.h */,
+			);
+			name = ColaInt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC829DB028275D5100188C19 /* Ejercicios2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC829DB828275D5100188C19 /* Build configuration list for PBXNativeTarget "Ejercicios2" */;
+			buildPhases = (
+				FC829DAD28275D5100188C19 /* Sources */,
+				FC829DAE28275D5100188C19 /* Frameworks */,
+				FC829DAF28275D5100188C19 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ejercicios2;
+			productName = Ejercicios2;
+			productReference = FC829DB128275D5100188C19 /* Ejercicios2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC829DA928275D5100188C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FC829DB028275D5100188C19 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FC829DAC28275D5100188C19 /* Build configuration list for PBXProject "Ejercicios2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC829DA828275D5100188C19;
+			productRefGroup = FC829DB228275D5100188C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC829DB028275D5100188C19 /* Ejercicios2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC829DAD28275D5100188C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC829EC828282C5E00188C19 /* PruebasListaPosInt.cpp in Sources */,
+				FC829EC728282C5E00188C19 /* PruebasPilaInt.cpp in Sources */,
+				FC829EE328282C5E00188C19 /* PruebasListaOrdInt.cpp in Sources */,
+				FC829EC228282C5E00188C19 /* MultisetIntImp.cpp in Sources */,
+				FC829ED928282C5E00188C19 /* EstadisticaPrueba.cpp in Sources */,
+				FC829EDD28282C5E00188C19 /* ConductorPrueba.cpp in Sources */,
+				FC829EDB28282C5E00188C19 /* ListaOrdIntImp.cpp in Sources */,
+				FC829ED628282C5E00188C19 /* PruebasSetInt.cpp in Sources */,
+				FC829ED028282C5E00188C19 /* TablaIntStringImp.cpp in Sources */,
+				FC829EE628282C5E00188C19 /* PruebasDiccionarioInt.cpp in Sources */,
+				FC829EDF28282C5E00188C19 /* ManejadorArchivos.cpp in Sources */,
+				FC829EDA28282C5E00188C19 /* PruebasTablaIntInt.cpp in Sources */,
+				FC829EC328282C5E00188C19 /* ListaOrdIntImp2.cpp in Sources */,
+				FC829ECC28282C5E00188C19 /* ManejadorSalidaPrueba.cpp in Sources */,
+				FC829EEA28282C5E00188C19 /* main.cpp in Sources */,
+				FC829ED428282C5E00188C19 /* ManejadorImpresionPrueba.cpp in Sources */,
+				FC829ED328282C5E00188C19 /* PruebasAuxEntrega.cpp in Sources */,
+				FC829ED128282C5E00188C19 /* FuncAux.cpp in Sources */,
+				FC829EC428282C5E00188C19 /* DiccionarioIntImp.cpp in Sources */,
+				FC829EDE28282C5E00188C19 /* Defensa.cpp in Sources */,
+				FC829EDC28282C5E00188C19 /* SetIntImp.cpp in Sources */,
+				FC829EC628282C5E00188C19 /* PruebasAuxDefensa.cpp in Sources */,
+				FC829EE028282C5E00188C19 /* Prueba.cpp in Sources */,
+				FC829EE428282C5E00188C19 /* PruebasColaPrioridadInt.cpp in Sources */,
+				FC829ED728282C5E00188C19 /* PruebasTablaIntString.cpp in Sources */,
+				FC829ECD28282C5E00188C19 /* Ejercicios.cpp in Sources */,
+				FC829ECE28282C5E00188C19 /* ColaPrioridadIntImp.cpp in Sources */,
+				FC829EC528282C5E00188C19 /* PruebasCorreccion.cpp in Sources */,
+				FC829ED828282C5E00188C19 /* FuncAux_s.cpp in Sources */,
+				FC829EE828282C5E00188C19 /* FuncAuxTAD.cpp in Sources */,
+				FC829EE228282C5E00188C19 /* ColaIntImp.cpp in Sources */,
+				FC829ECF28282C5E00188C19 /* PilaIntImp.cpp in Sources */,
+				FC829ED528282C5E00188C19 /* PruebasDefensa.cpp in Sources */,
+				FC829EC928282C5E00188C19 /* ConductorPruebaObl2.cpp in Sources */,
+				FC829EE528282C5E00188C19 /* ListaPosIntImp.cpp in Sources */,
+				FC829EE728282C5E00188C19 /* PruebasPropias.cpp in Sources */,
+				FC829EE928282C5E00188C19 /* TablaIntIntImp.cpp in Sources */,
+				FC829ECA28282C5E00188C19 /* ColaArray.cpp in Sources */,
+				FC829ED228282C5E00188C19 /* PruebasEjemploDeUsoEntrega.cpp in Sources */,
+				FC829ECB28282C5E00188C19 /* PruebasMultisetInt.cpp in Sources */,
+				FC829EE128282C5E00188C19 /* PruebasColaInt.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC829DB628275D5100188C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC829DB728275D5100188C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC829DB928275D5100188C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC829DBA28275D5100188C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC829DAC28275D5100188C19 /* Build configuration list for PBXProject "Ejercicios2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC829DB628275D5100188C19 /* Debug */,
+				FC829DB728275D5100188C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC829DB828275D5100188C19 /* Build configuration list for PBXNativeTarget "Ejercicios2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC829DB928275D5100188C19 /* Debug */,
+				FC829DBA28275D5100188C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC829DA928275D5100188C19 /* Project object */;
+}
