@@ -1,3 +1,4 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "DiccionarioInt.h"
 
 #ifdef DICCIONARIO_INT_IMP
@@ -24,10 +25,18 @@ DiccionarioInt crearDiccionarioInt(unsigned int esperados) {
     return diccionario;
 }
 
+// PRE: -
+// POS: Devuelve un valor hash entre 0 y
 unsigned int funcionHash(int e, unsigned int largo) {
-    return e % largo;
+    int hash = e % largo;
+    if (hash < 0) {
+        hash += largo;
+    }
+    return hash;
 }
 
+//PRE: -
+//POS: Redimensiona la tabla de hash y reubica los elementos, libera la memoria del viejo.
 void redimensionarDiccionario(DiccionarioInt& d, unsigned int nuevoLargo) {
     DiccionarioInt nuevaTabla = crearDiccionarioInt(nuevoLargo);
 

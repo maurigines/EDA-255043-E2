@@ -1,6 +1,8 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "Ejercicios.h"
 
-// FunciÛn auxiliar para realizar el recorrido en orden y aÒadir elementos a la lista
+//PRE: -
+// POS: realiza el recorrido en orden y anade elementos a la lista
 void recorrerIOyA(NodoABInt* nodo, ListaOrdInt& lista) {
     if (nodo == NULL) {
         return;      }

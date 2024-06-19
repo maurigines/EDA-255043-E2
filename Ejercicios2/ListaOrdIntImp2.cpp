@@ -1,3 +1,4 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "ListaOrdInt.h"
 
 #ifdef LISTA_ORD_INT_IMP_2
@@ -22,7 +23,7 @@ ListaOrdInt crearListaOrdInt() {
     return new _cabezalListaOrdInt();
 }
 
-//PRE: Recibe un puntero a un nodo y un entero
+//PRE: -
 //POS: Agrega un nodo con el entero al ·rbol
 void agregarNodo(NodoListaOrdInt*& nodo, int e) {
     if (nodo == NULL) {
@@ -44,8 +45,8 @@ void agregar(ListaOrdInt& l, int e) {
     l->totalNodos++;
 }
 
-//PRE: Recibe un puntero a un nodo
-//POS: Retorna el valor mÌnimo del ·rbol
+//PRE: -
+//POS: Retorna el valor mÌnimo del arbol
 void borrarMinimoNodo(NodoListaOrdInt*& nodo) {
     if (nodo == NULL) return;
     if (nodo->izquierda == NULL) {
@@ -73,8 +74,8 @@ void borrarMinimo(ListaOrdInt& l) {
     l->totalNodos--;
 }
 
-//PRE: Recibe un puntero a un nodo
-//POS: Retorna el valor m·ximo del ·rbol
+//PRE: -
+//POS: Retorna el valor maximo del arbol
 void borrarMaximoNodo(NodoListaOrdInt*& nodo) {
     if (nodo == NULL) return;
     if (nodo->derecha == NULL) {
@@ -102,55 +103,56 @@ void borrarMaximo(ListaOrdInt& l) {
     l->totalNodos--;
 }
 
-//PRE: Recibe un puntero a un nodo y un entero
-//POS: Borra un nodo con el entero del ·rbol
-void borrarNodo(NodoListaOrdInt*& nodo, int e) {
+//PRE:
+//POS: Borra un nodo con el entero del arbol
+void borrarNodo(NodoListaOrdInt*& nodo, int e, bool& eliminado) {
     if (nodo == NULL) return;
     if (e == nodo->valor) {
         if (nodo->repeticiones > 1) {
             nodo->repeticiones--;
-        }
-        else if (nodo->izquierda == NULL && nodo->derecha == NULL) {
+            eliminado = true;
+        } else if (nodo->izquierda == NULL && nodo->derecha == NULL) {
             delete nodo;
             nodo = NULL;
-        }
-        else if (nodo->izquierda == NULL) {
+            eliminado = true;
+        } else if (nodo->izquierda == NULL) {
             NodoListaOrdInt* temp = nodo;
             nodo = nodo->derecha;
             delete temp;
-        }
-        else if (nodo->derecha == NULL) {
+            eliminado = true;
+        } else if (nodo->derecha == NULL) {
             NodoListaOrdInt* temp = nodo;
             nodo = nodo->izquierda;
             delete temp;
-        }
-        else {
+            eliminado = true;
+        } else {
             NodoListaOrdInt* minNode = nodo->derecha;
             while (minNode->izquierda != NULL) {
                 minNode = minNode->izquierda;
             }
             nodo->valor = minNode->valor;
             nodo->repeticiones = minNode->repeticiones;
-            borrarNodo(nodo->derecha, minNode->valor);
+            borrarNodo(nodo->derecha, minNode->valor, eliminado);
+            eliminado = true;
         }
-    }
-    else if (e < nodo->valor) {
-        borrarNodo(nodo->izquierda, e);
-    }
-    else {
-        borrarNodo(nodo->derecha, e);
+    } else if (e < nodo->valor) {
+        borrarNodo(nodo->izquierda, e, eliminado);
+    } else {
+        borrarNodo(nodo->derecha, e, eliminado);
     }
 }
-
 
 void borrar(ListaOrdInt& l, int e) {
     if (l == NULL || l->totalNodos == 0) return;
-    borrarNodo(l->raiz, e);
-    l->totalNodos--;
+    bool eliminado = false;
+    borrarNodo(l->raiz, e, eliminado);
+    if (eliminado) {
+        l->totalNodos--;
+    }
 }
 
-// PRE: Recibe un puntero a un nodo
-// POS: Retorna el mÌnimo del ·rbol
+// PRE: -
+// POS: Retorna el mÌnimo del arbol
 int minimoNodo(NodoListaOrdInt* nodo) {
     if (nodo->izquierda == NULL) return nodo->valor;
     return minimoNodo(nodo->izquierda);
@@ -160,8 +162,8 @@ int minimo(ListaOrdInt l) {
     return minimoNodo(l->raiz);
 }
 
-// PRE: Recibe un puntero a un nodo
-// POS: Retorna el m·ximo del ·rbol
+// PRE: -
+// POS: Retorna el maximo del arbol
 int maximoNodo(NodoListaOrdInt* nodo) {
     if (nodo->derecha == NULL) return nodo->valor;
     return maximoNodo(nodo->derecha);
@@ -171,8 +173,8 @@ int maximo(ListaOrdInt l) {
     return maximoNodo(l->raiz);
 }
 
-// PRE: Recibe un puntero a un nodo
-// POS: Retorna si existe un nodo con el entero en el ·rbol
+// PRE: -
+// POS: Retorna si existe un nodo con el entero en el arbol
 bool existeNodo(NodoListaOrdInt* nodo, int e) {
     if (nodo == NULL) return false;
     if (e == nodo->valor) return true;
@@ -195,7 +197,7 @@ unsigned int cantidadElementos(ListaOrdInt l) {
 }
 
 
-// PRE: Recibe un puntero a un nodo
+// PRE: -
 // POS: Retorna la cantidad de nodos del ·rbol
 NodoListaOrdInt* clonNodo(NodoListaOrdInt* nodo) {
     if (nodo == NULL) return NULL;
@@ -215,8 +217,9 @@ ListaOrdInt clon(ListaOrdInt l) {
     return cl;
 }
 
-// PRE: Recibe un puntero a un nodo
-// POS: Destruye el ·rbol
+
+// PRE: -
+// POS: Destruye el arbol
 void destruirNodo(NodoListaOrdInt*& nodo) {
     if (nodo == NULL) return;
     destruirNodo(nodo->izquierda);

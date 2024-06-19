@@ -1,5 +1,5 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "TablaIntString.h"
-#include <cstring> // para usar strcpy y strlen
 
 #ifdef TABLA_INT_STRING_IMP
 
@@ -15,11 +15,18 @@ struct _cabezalTablaIntString {
     unsigned int largoTablaHash;
 };
 
-// Función de hash
-unsigned int funcionHashIntString(int d, unsigned int largo) {
-    return d % largo;
+// PRE: -
+// POS: Devuelve un valor hash entre 0 y
+unsigned int funcionHashIntString(int e, unsigned int largo) {
+    int hash = e % largo;
+    if (hash < 0) {
+        hash += largo;
+    }
+    return hash;
 }
 
+//PRE:
+//POS: Devuelve el largo de un String
 int stringLength(const char* str) {
     int length = 0;
     while (str[length] != '\0') {
@@ -28,6 +35,8 @@ int stringLength(const char* str) {
     return length;
 }
 
+//PRE:-
+//POS: Copia el String
 void stringCopy(char* dest, const char* src) {
     int i = 0;
     while (src[i] != '\0') {
@@ -48,6 +57,8 @@ TablaIntString crearTablaIntString(unsigned int esperados) {
     return tabla;
 }
 
+//PRE: -
+//POS: Redimensiona la tabla de hash y reubica los elementos, libera la memoria del viejo.
 void redimensionarTabla(TablaIntString& t, unsigned int nuevoLargo) {
     TablaIntString nuevaTabla = crearTablaIntString(nuevoLargo);
 
@@ -145,7 +156,7 @@ int elemento(TablaIntString t) {
             return t->tablaHash[i]->clave;
         }
     }
-    return 0; // Devuelve 0 si la tabla está vacía
+    return 0; 
 }
 
 bool esVacia(TablaIntString t) {

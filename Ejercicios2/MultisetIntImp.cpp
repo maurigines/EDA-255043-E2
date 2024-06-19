@@ -1,3 +1,4 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "MultisetInt.h"
 
 #ifdef MULTISET_INT_IMP
@@ -14,10 +15,18 @@ struct _cabezalMultisetInt {
     unsigned int largoTablaHash;
 };
 
-unsigned int funcionHashInt(int d, unsigned int largo) {
-    return d % largo;
+//PRE: -
+//POS: POS: Devuelve un valor hash entre 0 y
+unsigned int funcionHashInt(int e, unsigned int largo) {
+    int hash = e % largo;
+    if (hash < 0) {
+        hash += largo;
+    }
+    return hash;
 }
 
+//PRE: -
+//POS: Redimensiona la tabla de hash y reubica los elementos, libera la memoria del viejo.
 void redimensionarTabla(MultisetInt& s, unsigned int nuevoLargo) {
     MultisetInt nuevaTabla = new _cabezalMultisetInt;
     nuevaTabla->cantidadElementos = 0;

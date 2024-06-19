@@ -1,31 +1,31 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "ListaPosInt.h"
 
 #ifdef LISTA_POS_INT_IMP
+
+struct NodoListaPosInt {
+    int valor;
+};
 
 struct _cabezalListaPosInt {
     int capacidad;
     int lUltimo;
     int contador;
-    int* lElementos;
-
-
+    NodoListaPosInt* lElementos;
 };
 
-ListaPosInt crearListaPosInt(){
-    
+ListaPosInt crearListaPosInt() {
     ListaPosInt l = new _cabezalListaPosInt;
     l->capacidad = 10;
     l->lUltimo = 0;
     l->contador = 0;
-    l->lElementos = new int[l->capacidad];
+    l->lElementos = new NodoListaPosInt[l->capacidad];
     return l;
-        
 }
 
-void agregar(ListaPosInt& l, int e, unsigned int pos)
-{
+void agregar(ListaPosInt& l, int e, unsigned int pos) {
     if (l->contador == l->capacidad) {
-        int* lElementos = new int[l->capacidad * 2];
+        NodoListaPosInt* lElementos = new NodoListaPosInt[l->capacidad * 2];
         for (int i = 0; i < l->capacidad; i++) {
             lElementos[i] = l->lElementos[i];
         }
@@ -34,21 +34,18 @@ void agregar(ListaPosInt& l, int e, unsigned int pos)
         l->capacidad = l->capacidad * 2;
     }
     if (pos >= l->contador) {
-        l->lElementos[l->contador] = e;
+        l->lElementos[l->contador].valor = e;
         l->contador++;
-    }
-    else {
+    } else {
         for (int i = l->contador; i > pos; i--) {
             l->lElementos[i] = l->lElementos[i - 1];
         }
-        l->lElementos[pos] = e;
+        l->lElementos[pos].valor = e;
         l->contador++;
     }
-    
 }
 
-void borrar(ListaPosInt& l, unsigned int pos)
-{
+void borrar(ListaPosInt& l, unsigned int pos) {
     if (pos < l->contador) {
         for (int i = pos; i < l->contador - 1; i++) {
             l->lElementos[i] = l->lElementos[i + 1];
@@ -57,30 +54,19 @@ void borrar(ListaPosInt& l, unsigned int pos)
     }
 }
 
-int elemento(ListaPosInt l, unsigned int pos)
-{
+int elemento(ListaPosInt l, unsigned int pos) {
     if (pos < l->contador) {
-        return l->lElementos[pos];
-    }
-    else {
+        return l->lElementos[pos].valor;
+    } else {
         return -1;
     }
-    
 }
 
-bool esVacia(ListaPosInt l)
-{
-    if (l->contador == 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
-    
+bool esVacia(ListaPosInt l) {
+    return l->contador == 0;
 }
 
-unsigned int cantidadElementos(ListaPosInt l)
-{
+unsigned int cantidadElementos(ListaPosInt l) {
     return l->contador;
 }
 
@@ -89,17 +75,17 @@ ListaPosInt clon(ListaPosInt l) {
     l2->capacidad = l->capacidad;
     l2->lUltimo = l->lUltimo;
     l2->contador = l->contador;
-    l2->lElementos = new int[l2->capacidad];
+    l2->lElementos = new NodoListaPosInt[l2->capacidad];
     for (unsigned int i = 0; i < l2->contador; i++) {
         l2->lElementos[i] = l->lElementos[i];
     }
     return l2;
 }
 
-void destruir(ListaPosInt& l)
-{
+void destruir(ListaPosInt& l) {
     delete[] l->lElementos;
     delete l;
+    l = nullptr;
 }
 
 

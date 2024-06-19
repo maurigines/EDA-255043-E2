@@ -1,3 +1,4 @@
+// Mauricio Gines Martinez Miglionico 255043
 #include "ColaPrioridadInt.h"
 
 #ifdef COLAPRIORIDAD_INT_IMP
@@ -24,7 +25,6 @@ ColaPrioridadInt crearColaPrioridadInt(unsigned int cota) {
 void encolar(ColaPrioridadInt& c, int e, int p) {
     if (esLlena(c)) return;
 
-    // Insertar el elemento al final del arreglo
     int i = c->cantidad - 1;
     while (i >= 0 && c->elementos[i].prioridad < p) {
         c->elementos[i + 1] = c->elementos[i];

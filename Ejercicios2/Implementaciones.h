@@ -1,8 +1,8 @@
 #pragma once
 
 // Elegir la implementacion a usar de ListaOrd (solo 1 descomentada a la vez):
-#define LISTA_ORD_INT_IMP			// Esta es la implementacion que entregamos
-//#define LISTA_ORD_INT_IMP_2		// Esta es la implementacion que corresponde al ejericio
+//#define LISTA_ORD_INT_IMP			// Esta es la implementacion que entregamos
+#define LISTA_ORD_INT_IMP_2		// Esta es la implementacion que corresponde al ejericio
 
 
 // No modificar de aca en adelante
